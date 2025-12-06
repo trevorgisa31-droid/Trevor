@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trevor's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -191,6 +190,18 @@
       <p>Made by Trevor Gisa</p>
     </footer>
   </div>
+
+  <script>
+    document.querySelector('.cta-button').addEventListener('click', () => {
+      document.querySelector('.home-page').style.display = 'none';
+      document.querySelector('.projects-page').style.display = 'block';
+    });
+
+    document.querySelector('.back-button').addEventListener('click', () => {
+      document.querySelector('.projects-page').style.display = 'none';
+      document.querySelector('.home-page').style.display = 'block';
+    });
+  </script>
 
 </body>
 </html>
